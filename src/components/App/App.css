@@ -1,0 +1,13 @@
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
