@@ -1,0 +1,96 @@
+.modal-overlay {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 2px;
+    width: 80%;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    font-style: normal;
+    height: auto;
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+.upper-section > h1 {
+    margin: 0;
+}
+
+.close {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.middle-section > * {
+    margin: 5px 0;
+}
+
+.lower-section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+}
+
+.modal-btn {
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    margin-left: 15px;
+    padding: 12px 24px;
+    transition: background-color 0.3s;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.modal-btn:hover {
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #2ecc71;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #27ae60;
+}
+
+.btn-red {
+    background-color: #e74c3c;
+}
+
+.btn-red:hover,
+.btn-red:focus {
+    background-color: #c0392b;
+}

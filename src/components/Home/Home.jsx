@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Modal from '../Modal/Modal';
 
 import homeAnime from './../../assets/home_anime.gif';
 import './Home.css';
 
 class Home extends Component {
+    state = { showModal: false };
+
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({ showModal: true });
+        }, 1000);
+    }
+
+    closeModal = () => {
+        this.setState({ showModal: false });
+    };
+
     render() {
         return (
             <div className='home-container'>
+                {this.state.showModal && <Modal closeModal={this.closeModal} />}
                 <div className='header-text'>
                     <h1>Welcome to my portfolio!</h1>
                     <p>This is Madhav, a full stack dev and a teacher</p>
