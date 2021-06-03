@@ -8,6 +8,7 @@ import Contact from './../Contact/Contact';
 
 import './App.css';
 import NavBar from '../NavBar/NavBar';
+import GoHome from '../GoHome/GoHome';
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                     <Route path='/projects' exact component={Projects} />
                     <Route path='/skills' exact component={Skills} />
                     <Route path='/contact' exact component={Contact} />
+                    <GoHome />
                 </div>
             </BrowserRouter>
         </div>
