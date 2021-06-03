@@ -3,7 +3,7 @@ import './Skills.css';
 
 const Skills = () => {
     return (
-        <div>
+        <div className='section-container'>
             <h1>I am the skills page!</h1>
         </div>
     );

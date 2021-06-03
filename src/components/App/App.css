@@ -12,3 +12,22 @@ textarea:focus,
 select:focus {
     outline: none;
 }
+
+.section-container {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* For the small width screens */
+@media only screen and (max-width: 640px) {
+    .section-container {
+        padding: 100px 0;
+    }
+}
