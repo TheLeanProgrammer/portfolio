@@ -17,6 +17,33 @@ const Contact = () => {
                 details='Interested to collaborate? Feel free to drop me an email.'
             />
 
+            {/* Form section */}
+            <div className='contact-form-container'>
+                <form className='contact-form'>
+                    {/* Email Id Input */}
+                    <input
+                        type='email'
+                        placeholder='Your Email ID'
+                        name='email'
+                        className='input-box email-input'
+                        autoComplete='off'
+                    />
+
+                    {/* Email Body */}
+                    <textarea
+                        type='text'
+                        placeholder='Your Message'
+                        name='message'
+                        className='input-box body-input'
+                    ></textarea>
+
+                    {/* Submit button */}
+                    <button type='submit' className='contact-btn'>
+                        Send Email
+                    </button>
+                </form>
+            </div>
+
             {/* Social icons */}
             <div className='social-icons-container'>
                 <a href='https://github.com/MadhavBahl' className='social-icon'>
