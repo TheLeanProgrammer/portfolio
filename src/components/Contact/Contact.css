@@ -1,3 +1,51 @@
+.contact-form-container {
+    width: 50%;
+    align-self: center;
+    margin: 70px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box {
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    padding: 19px 35px;
+    margin: 10px 0;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.body-input {
+    height: 250px;
+    padding: 25px 35px;
+}
+
+.contact-btn {
+    margin: 10px 0;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 17px 35px;
+    background: linear-gradient(39.97deg, #03d6f3 0.79%, #458ff6 79.29%);
+    border-radius: 35px;
+}
+
 .social-icons-container {
     display: flex;
     flex-direction: row;
@@ -21,5 +69,8 @@
 @media only screen and (max-width: 640px) {
     .social-icon {
         margin: 8px 21px;
+    }
+    .contact-form-container {
+        width: 80%;
     }
 }
