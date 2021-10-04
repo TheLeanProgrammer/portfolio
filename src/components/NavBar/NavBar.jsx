@@ -20,7 +20,7 @@ class NavBar extends React.Component {
 
     closeMenu = () => {
         this.setState({
-            menuOpen:false
+            menuOpen: false
         })
     }
 
