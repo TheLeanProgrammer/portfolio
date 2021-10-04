@@ -14,7 +14,7 @@ class NavBar extends React.Component {
     
     handleStateChange = (state) => {
         this.setState({
-            menuOpen:state.isOpen
+            menuOpen: state.isOpen
         })
     }
 
