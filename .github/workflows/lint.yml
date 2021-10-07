@@ -2,10 +2,7 @@ name: Lint
 
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the main branch
-  push:
-    branches:
-      - master
+  # but only for the master branch
   pull_request:
     branches:
       - master
@@ -24,7 +21,6 @@ jobs:
         with:
           node-version: 12
 
-      # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm ci
 
@@ -32,4 +28,3 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
-          prettier: true
